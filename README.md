@@ -18,8 +18,8 @@ A powerful developer tool for constructing optimized context windows for Large L
 
 ```bash
 # Clone the repository
-git clone <repository-url>
-cd contextos
+git clone https://github.com/Hardik-369/-ContextOS
+cd -ContextOs
 
 # Install dependencies
 pip install -r requirements.txt
