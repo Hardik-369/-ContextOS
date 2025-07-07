@@ -357,4 +357,4 @@ python -c "import yaml; print(yaml.safe_load(open('recipes/your_recipe.yaml')))"
 
 **Happy Context Building!** 🎉
 
-For questions, issues, or contributions, please visit our [GitHub repository](https://github.com/your-repo/contextos).
+For questions, issues, or contributions, please visit our [GitHub repository](https://github.com/Hardik-369/-ContextOS).
