@@ -1,0 +1,20 @@
+# Core dependencies
+pydantic>=2.0.0
+together>=0.2.0
+PyYAML>=6.0
+
+# RAG dependencies
+faiss-cpu>=1.7.0
+sentence-transformers>=2.2.0
+numpy>=1.24.0
+
+# CLI dependencies
+typer[all]>=0.9.0
+rich>=13.0.0
+
+# Web UI dependencies
+streamlit>=1.28.0
+
+# Utilities
+python-dotenv>=1.0.0
+pathlib2>=2.3.0

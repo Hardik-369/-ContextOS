@@ -1,0 +1,17 @@
+task: code_review
+include:
+  - system_instruction
+  - document_text
+  - user_input
+  - few_shot
+compact_strategy: truncate
+model: mistralai/Mixtral-8x7B-Instruct-v0.1
+max_tokens: 6000
+temperature: 0.4
+top_k: 3
+system_instruction: "You are an expert code reviewer. Provide constructive feedback, identify potential issues, suggest improvements, and highlight best practices."
+few_shot_examples:
+  - input: "Review this Python function for calculating fibonacci numbers."
+    output: "Looking at this fibonacci function, I notice several areas for improvement: 1) The recursive approach has exponential time complexity O(2^n), consider using memoization or iteration, 2) Add type hints for better code clarity, 3) Include docstring documentation, 4) Handle edge cases like negative inputs."
+  - input: "Check this SQL query for performance issues."
+    output: "This SQL query has several optimization opportunities: 1) Add appropriate indexes on JOIN columns, 2) Consider using EXISTS instead of IN for subqueries, 3) The WHERE clause could benefit from early filtering, 4) Review if all columns in SELECT are necessary to reduce data transfer."
